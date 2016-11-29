@@ -1,0 +1,24 @@
+.clase {
+
+  /*m0*/
+  margin: 0;
+
+  /*p0*/
+  padding: 0;
+
+  /*w300*/
+  width: 300px;
+
+  /*h100%  */
+  height: 100%;
+
+  /*dib*/
+  display: inline-block;
+
+  /*fl*/
+  float: left;
+
+  /*pt0*/
+  padding-top: 0;
+
+}

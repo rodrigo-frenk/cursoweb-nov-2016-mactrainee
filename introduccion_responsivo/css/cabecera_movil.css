@@ -1,0 +1,46 @@
+#cabecera,
+#cabecera > * {
+  height: 100px;
+}
+
+#cabecera {
+  position: relative;
+}
+
+#menu-movil {
+  /*
+  posa
+  t0
+  l0
+  */
+
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+
+#menu-movil #boton-cerrar,
+#menu-movil .elemento-menu {
+  height: 20vh;
+}
+
+
+#boton-menu,
+#boton-cerrar {
+  color: #fa90fd;
+  font-size: 50px;
+}
+
+
+
+
+
+/* COLORES: */
+
+#menu-movil {
+  background-color: #eee;
+}

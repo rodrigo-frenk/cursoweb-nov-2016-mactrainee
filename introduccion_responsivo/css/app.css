@@ -1,0 +1,9 @@
+* {
+  outline: 1px solid #def;
+}
+
+
+
+.hidden {
+  display: none;
+}

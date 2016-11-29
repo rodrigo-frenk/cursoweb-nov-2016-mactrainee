@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Introducción a Etiquetas</title>
+
+  <style>
+
+    section#entrada, aside#barralateral {
+      /*fl*/
+      float: left;
+      /*dib*/
+      display: inline-block;
+      outline: 1px solid #def;
+    }
+
+    section#entrada {
+      width: 70%;
+    }
+
+    aside#barralateral {
+      width: 30%;
+    }
+
+  </style>
+
+</head>
+<body>
+
+
+  <div class="contenedor">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+  </div>
+
+
+  <div class="contenedor">
+    <a href="http://google.com" target="_blank">
+      <img src="http://fakeimg.pl/400x300/ffaa00/0bc1ed" alt="Imagen">
+    </a>
+  </div>
+
+
+  <div class="contenedor">
+    <ul>
+      <li>Lista Desordenada 1</li>
+      <li>Lista Desordenada 2</li>
+    </ul>
+    <ol>
+      <li>Lista Desordenada 1</li>
+      <li>Lista Desordenada 2</li>
+    </ol>
+  </div>
+
+
+
+    <div class="contenedor">
+      <h1>Etiquetas Semánticas</h1>
+      <h4>Fueron introducidas en HTML5</h4>
+
+      <header>
+        Sirve para una cabecera.
+        <nav>
+          <ul>
+            <li><a href="">Menú 1</a></li>
+            <li><a href="">Menú 2</a></li>
+            <li><a href="">Menú 3</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <footer>
+        Sirve para un pie
+      </footer>
+
+      <main>
+        Sirve para indicar el contenedor principal del sitio.
+        <b>Sólo debe haber una etiqueta main en un sitio</b>
+
+
+        <section id="entrada" class="contenedor">
+
+
+          <!-- Sirve para marcar un elemento que es un contenido autosuficiente -->
+          <!-- article>header>h1{Titular}^+section.contenido>p>lorem12^^+footer{pie} -->
+          <article>
+            <header>
+              <h1>Titular</h1>
+            </header>
+            <section class="contenido">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate maiores delectus laboriosam.</p>
+            </section>
+            <footer>pie</footer>
+          </article>
+
+
+
+        </section>
+
+        <aside id="barralateral">
+          Barra Lateral
+        </aside>
+
+
+      </main>
+
+    </div>
+
+
+
+
+</body>
+</html>

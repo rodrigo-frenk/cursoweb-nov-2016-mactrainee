@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Introducción a Emmet</title>
+</head>
+<body>
+
+  <!-- Comentario -->
+
+  <!-- etiqueta -->
+  <etiqueta></etiqueta>
+
+
+  <!-- etiqueta#identidad -->
+  <etiqueta id="identidad"></etiqueta>
+
+  <!-- etiqueta.clase1.clase2 -->
+  <etiqueta class="clase1 clase2"></etiqueta>
+
+  <!-- etiqueta#identidad.clase1.clase2 -->
+  <etiqueta id="identidad" class="clase1 clase2"></etiqueta>
+
+  <!-- etiqueta[atributo=valor] -->
+  <etiqueta atributo="valor"></etiqueta>
+
+  <!-- etiqueta[atributo1=valor1][atributo2=valor2] -->
+  <etiqueta atributo1="valor1" atributo2="valor2"></etiqueta>
+
+
+  <!-- etiqueta#identidad.clase1.clase2[atributo=unvalor] -->
+  <etiqueta id="identidad" class="clase1 clase2" atributo="unvalor"></etiqueta>
+
+
+  <!-- etiqueta{Contenido} -->
+  <etiqueta>Contenido</etiqueta>
+
+
+  <!-- h1{Título}+p{texto...} -->
+  <h1>Título</h1>
+  <p>texto...</p>
+
+  <!-- crear dos cajas, una con un título, y la otra con un párrafo. -->
+  <!-- para esto, subiremos un nivel tras crear el titular: -->
+  <!-- div>h1{Titular}^+div>p{texto...} -->
+  <div>
+    <h1>Titular</h1>
+  </div>
+  <div>
+    <p>texto...</p>
+  </div>
+
+
+  <!-- ul>li -->
+  <ul>
+    <li></li>
+  </ul>
+
+
+  <!-- div>ul>li>a{palabra} -->
+  <div>
+    <ul>
+      <li><a href="">palabra</a></li>
+    </ul>
+  </div>
+
+
+  <!-- ul>li{lista $}*4 -->
+  <ul>
+    <li>lista 1</li>
+    <li>lista 2</li>
+    <li>lista 3</li>
+    <li>lista 4</li>
+  </ul>
+
+
+
+  <!-- estructura erronea: -->
+  <!-- ul>li>a{palabra}*4 -->
+  <ul>
+    <li>
+      <a href="">palabra</a>
+      <a href="">palabra</a>
+      <a href="">palabra</a>
+      <a href="">palabra</a>
+    </li>
+  </ul>
+
+
+  <!-- solucion: agrupar con parentesis -->
+  <!-- ul>(li>a{palabra})*4 -->
+  <ul>
+    <li><a href="">palabra</a></li>
+    <li><a href="">palabra</a></li>
+    <li><a href="">palabra</a></li>
+    <li><a href="">palabra</a></li>
+  </ul>
+
+
+</body>
+</html>
