@@ -1,0 +1,32 @@
+* {
+  outline: 1px solid #def;
+}
+
+/* RESETS */
+
+ul, li {
+  margin: 0;
+}
+
+
+
+/* asignar altura 100% a los contenedores */
+
+header,
+footer,
+main,
+section,
+div,
+article,
+aside {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.p-0 {
+  padding: 0;
+}
