@@ -20,6 +20,7 @@ div,
 article,
 aside {
   height: 100%;
+  box-sizing: border-box;
 }
 
 .hidden {

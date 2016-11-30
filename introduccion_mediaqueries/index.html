@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Introducción a Media Queries</title>
+
+  <style>
+
+  body, #titulo {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+
+
+  html,body {
+    height: 100%;
+  }
+
+  #titulo {
+    height: 10vh;
+    margin-top: 45vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+
+  @media screen and ( min-width: 0px ) {
+    body {
+      background-color: #005BD1;
+    }
+    #titulo {
+      color: #FF9A00;
+    }
+  }
+
+  @media screen and ( min-width: 350px ) {
+    body {
+      background-color: #3300D5;
+    }
+    #titulo {
+      color: #FFD100;
+    }
+  }
+
+  @media screen and ( min-width: 700px ) {
+    body {
+      background-color: #A800D2;
+    }
+    #titulo {
+      color: #EAFD00;
+    }
+  }
+
+  @media screen and ( min-width: 1050px ) {
+    body {
+      background-color: #F20045;
+    }
+    #titulo {
+      color: #72F100;
+    }
+  }
+
+
+
+
+    @media screen and ( min-height: 0 ) {
+      #titulo {
+        font-size: 30px;
+      }
+    }
+
+    @media screen and ( min-height: 500px ) {
+      #titulo {
+        font-size: 60px;
+      }
+    }
+
+
+
+    @media screen and ( min-width: 500px ) and ( max-width: 600px) {
+      body {
+        background-color: #E10092;
+      }
+    }
+
+
+</style>
+
+
+</head>
+
+<body>
+
+
+  <h1 id="titulo">Media Queries</h1>
+
+
+</body>
+</html>

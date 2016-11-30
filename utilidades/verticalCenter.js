@@ -1,23 +1,9 @@
-$(document).foundation();
-
-$(document).ready(function(){
-
-  verticalCenter();
-
-})
-
-
-
-
-
-
 verticalCenter = function( selector ) {
 
   if (typeof(selector)==='undefined')
   selector = '.v-center';
 
   $( selector ).each(function(){
-
     var parent = $(this);
     parent.css({opacity:0});
     var totalH = 0;
