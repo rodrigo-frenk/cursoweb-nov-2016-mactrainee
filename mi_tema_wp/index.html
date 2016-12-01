@@ -17,61 +17,284 @@
   <header id="cabecera" class="row expanded h-15">
 
     <!-- #logotipo.columns.small-4.medium-2.large-1 -->
-    <div id="logotipo" class="columns small-4 medium-2 large-1">
-      Logo
-    </div>
-
-    <nav id="menu" class="columns hide-for-small-only medium-10 large-11">
-      Menú
-    </nav>
-
-    <div id="boton-menu" class="columns small-4 small-offset-4 show-for-small-only text-right">
-      Botón
-    </div>
-
-  </header>
-
-  <div class="contenedor-principal row expanded h-75">
-
-    <aside id="barra-lateral" class="columns medium-2 h-sm-10 h-md-100 v-center">
-      <div class="columns h-a">
-        Barra Lateral
-      </div>
-    </aside>
-
-    <main id="principal" class="columns medium-10 h-sm-90 h-md-100 v-center">
-      <div class="columns h-a">
-        Principal
-      </div>
-    </main>
-
+    <div id="logotipo"
+    class="columns small-4 medium-2 large-1 imgLiquidNoFillLeft">
+    <img src="http://fakeimg.pl/300x300/fff/0bedc1?text=LOGO"
+    alt="Logotipo de Mi Tema">
   </div>
 
-  <footer id="pie-pagina" class="row expanded h-10">
+  <nav id="menu"
+  class="columns hide-for-small-only medium-10 large-11 h-100 p-0">
 
-    <section id="copyright" class="columns small-3 v-center">
+  <ul class="columns h-100 share-w p-0">
+
+    <li class="columns h-md-100 v-center">
       <div class="columns h-a">
-        Copyright
+        <a href="">Menú</a>
       </div>
-    </section>
-
-    <section id="legales" class="columns small-3 v-center">
+    </li>
+    <li class="columns h-md-100 v-center">
       <div class="columns h-a">
-        Legales
+        <a href="">Menú</a>
       </div>
-    </section>
-
-    <section id="redessociales" class="columns small-6 v-center">
+    </li>
+    <li class="columns h-md-100 v-center">
       <div class="columns h-a">
-        Redes y Contacto
+        <a href="">Menú</a>
       </div>
-    </section>
+    </li>
+    <li class="columns h-md-100 v-center">
+      <div class="columns h-a">
+        <a href="">Menú</a>
+      </div>
+    </li>
+    <li class="columns h-md-100 v-center">
+      <div class="columns h-a">
+        <a href="">Menú</a>
+      </div>
+    </li>
 
-  </footer>
+  </ul>
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
+</nav>
+
+<div id="menu-movil-abrir"
+class="columns small-4 small-offset-4 show-for-small-only
+ font-xl text-right v-center">
+<div class="columns h-a"><i class="fa fa-bars"></i></div>
+</div>
+
+
+
+<nav id="menu-movil"
+class="columns small-12 h-100-v absolute hidden color-background-bg p-0 z1k">
+
+<div class="columns h-15 p-0">
+  <div id="menu-movil-titulo" class="columns small-6 small-offset-3 v-center">
+    <div class="columns h-a">
+      <h1 class="m-0">Menú</h1>
+    </div>
+  </div>
+  <div id="menu-movil-cerrar" class="columns small-3 h-100 p-0 v-center">
+    <div class="columns h-a">
+      <i class="fa fa-close font-xl"></i>
+    </div>
+  </div>
+</div>
+
+<ul class="columns h-85 share-h p-0">
+
+  <li class="columns v-center">
+    <div class="columns h-a">
+      <a href="">Menú</a>
+    </div>
+  </li>
+  <li class="columns v-center">
+    <div class="columns h-a">
+      <a href="">Menú</a>
+    </div>
+  </li>
+  <li class="columns v-center">
+    <div class="columns h-a">
+      <a href="">Menú</a>
+    </div>
+  </li>
+  <li class="columns v-center">
+    <div class="columns h-a">
+      <a href="">Menú</a>
+    </div>
+  </li>
+  <li class="columns v-center">
+    <div class="columns h-a">
+      <a href="">Menú</a>
+    </div>
+  </li>
+
+
+</ul>
+
+</nav>
+
+
+</header>
+
+<div id="contenedor-principal" class="row expanded h-75">
+
+  <aside id="categorias" class="columns medium-2 h-sm-10 h-md-100">
+
+    <button id="categorias-boton" class="show-for-small-only columns button hollow">
+      <div class="columns v-center">
+
+        <div class="columns h-a font-l p-0">
+
+          <div class="columns small-8 small-offset-2">
+            Categorías
+          </div>
+
+          <div class="columns small-2 p-0 text-right">
+            <i id="categorias-boton-flecha" class="fa fa-caret-down"></i>
+          </div>
+
+        </div>
+
+      </div>
+    </button>
+
+    <div class="columns">
+      <ul id="categorias-menu" class="vertical menu" data-drilldown>
+
+        <li>
+          <a href="#Item-1">
+            Categoría 1
+          </a>
+          <ul class="vertical menu">
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 1A
+              </a>
+            </li>
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 1B
+              </a>
+            </li>
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 1C
+              </a>
+            </li>
+            <!-- ... -->
+          </ul>
+        </li>
+        <li>
+          <a href="#Item-2">
+            Categoría 2
+          </a>
+        </li>
+        <li>
+          <a href="#Item-1">
+            Categoría 3
+          </a>
+          <ul class="vertical menu">
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 3A
+              </a>
+            </li>
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 3B
+              </a>
+            </li>
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 3C
+              </a>
+            </li>
+            <!-- ... -->
+          </ul>
+        </li>
+        <li>
+          <a href="#Item-2">
+            Categoría 4
+          </a>
+        </li>
+        <li>
+          <a href="#Item-1">
+            Categoría 5
+          </a>
+          <ul class="vertical menu">
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 5A
+              </a>
+            </li>
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 5B
+              </a>
+            </li>
+            <li>
+              <a href="#Item-1A">
+                Subcategoría 5C
+              </a>
+            </li>
+            <!-- ... -->
+          </ul>
+        </li>
+        <li>
+          <a href="#Item-2">
+            Categoría 6
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </aside>
+
+  <main id="principal" class="columns medium-10 h-sm-90 h-md-100 v-center">
+    <div class="columns h-a">
+      Principal
+    </div>
+  </main>
+
+</div>
+
+<footer id="pie-pagina" class="row expanded h-10 font-xs">
+
+  <section id="copyright" class="columns small-3 v-center">
+    <div class="columns h-a">
+      © Mi Tema. 2016
+    </div>
+  </section>
+
+  <section id="legales" class="columns small-3 v-center">
+    <div class="columns h-a">
+      <a href="">
+        Términos y Condiciones
+      </a>
+    </div>
+  </section>
+
+  <nav id="redessociales"
+  class="columns small-6 medium-3 medium-offset-3 h-100 v-center font-l">
+
+  <!-- ul.columns>(li.icono-redes.columns.small-3.v-center>a.columns.h-a>i.fa.fa-facebook)*4 -->
+  <ul class="columns">
+    <li class="icono-redes columns small-3 v-center">
+      <a href="http://facebook.com/mitema" class="columns h-a">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li class="icono-redes columns small-3 v-center">
+      <a href="http://twitter.com/mitema" class="columns h-a">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li class="icono-redes columns small-3 v-center">
+      <a href="http://instagram.com/mitema" class="columns h-a">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </li>
+    <li class="icono-redes columns small-3 v-center">
+      <a href="mailto:nombre@mi-tema.com" class="columns h-a">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+
+
+
+</nav>
+
+</footer>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/vendor/imgLiquid-min.js"></script>
+
+<script src="js/app.js"></script>
 </body>
 </html>
