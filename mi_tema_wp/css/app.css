@@ -29,6 +29,21 @@ aside {
   display: none;
 }
 
+
+.scroll {
+  overflow: auto;
+}
+
+.scroll-y {
+  overflow-y: auto;
+}
+
+.scroll-x {
+  overflow-x: auto;
+}
+
+
+
 .z-1 {
   z-index: -1;
 }
@@ -64,12 +79,30 @@ aside {
   padding: 0;
 }
 
+.p-0-2 {
+  padding: 7.5px;
+}
+
+.p-1 {
+  padding: 15px;
+}
+
 .m-0 {
   margin: 0;
 }
 
 
 
+.p-t-0 {
+  padding-top: 0;
+}
+
+.m-b-1 {
+  margin-bottom: 15px;
+}
+.m-b-2 {
+  margin-bottom: 30px;
+}
 
 
 
@@ -85,6 +118,9 @@ aside {
 
 /* COLORES */
 
+body,html {
+  background-color: #fbfbfb;
+}
 
 .color-background-bg {
   background-color: #fff;
@@ -92,7 +128,7 @@ aside {
 
 
 a {
-  /*color: #0bedc1;*/
+  color: #000;
 }
 
 
@@ -116,3 +152,32 @@ a {
 .font-xl {
   font-size: 32px;
 }
+
+
+
+
+
+
+
+/* CLASES UTILES: */
+
+.text-shadow {
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+/* ESTILOS DE COMPONENTES */
